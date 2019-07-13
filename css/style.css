@@ -61,7 +61,6 @@ body {
 
 .hotel-view {
   background-color: #fff;
-  background-color: orangered;
   flex: 1;
   height: 80rem; }
 
@@ -127,8 +126,8 @@ body {
     fill: var(--color-grey-dark-2); }
   .user-nav__notification {
     font-size: 0.8rem;
-    height: 1.50rem;
-    width: 1.50rem;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 70%;
     background-color: var(--color-primary);
     color: #fff;
@@ -150,7 +149,7 @@ body {
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
-      margin-bottom: .5rem; }
+      margin-bottom: 0.5rem; }
   .side-nav__item::before {
     content: "";
     position: absolute;
@@ -187,3 +186,18 @@ body {
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: var(--color-primary); }
