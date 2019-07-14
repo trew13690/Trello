@@ -28,6 +28,10 @@
   --line: 1px solid var(--color-grey-light-2);
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
 }
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em;
+$bp-med: 56.75em;
+
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +45,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // makes 1 rem =10px;
+  @media only screen and(max-width: $bp-large){
+    font-size:50%;
+  }
 }
 body {
   font-family: "Open Sans", sans-serif;
