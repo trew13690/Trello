@@ -19,6 +19,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and(max-width:$bp-smallest) {
+flex-wrap: wrap;
+height: 11rem;
+align-content: space-between;
+margin-bottom: 1rem;
+  }
 }
 .content {
   display: flex;
@@ -50,6 +57,9 @@
   @media only screen and(max-width:$bp-med) {
     padding: 3rem;
   }
+  @media only screen and(max-width:$bp-small) {
+  flex-direction: column;
+  }
 }
 
 .description {
@@ -63,6 +73,11 @@
   @media only screen and(max-width:$bp-med) {
    padding: 2rem;
    margin-right: 3rem;
+  }
+
+  @media only screen and(max-width:$bp-small) {
+margin-right: 0;
+margin-bottom: 3rem;
   }
 }
 
